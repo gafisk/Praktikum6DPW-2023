@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title id="title">Kebundadap Timur Index</title>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="menu">
+      <ul>
+        <li style="color: white;">KEDATIM</li>
+        <li><a onclick="kehome()" style="cursor: pointer" id="home">Home</a></li>
+        <li><a onclick="keevent()" style="cursor: pointer;" id="event">Event</a></li>
+        <li><a onclick="keabout()" style="cursor: pointer;" id="about">About</a></li>
+        <li><a onclick="kegallery()" style="cursor: pointer;" id="gallery">Gallery</a></li>
+        <li><a onclick="kecontact()" style="cursor: pointer;" id="contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="bmenu" style="float: right; font-size: 35px">
+      <i class="bi bi-list" onclick="bukamenu()"></i>
+    </div>
+    <div class="menubar" id="menubar">
+      <ul>
+        <li style="color: white;">KEDATIM</li>
+        <li><a onclick="kehome()" style="cursor: pointer" id="home">Home</a></li>
+        <li><a onclick="keevent()" style="cursor: pointer;" id="event">Event</a></li>
+        <li><a onclick="keabout()" style="cursor: pointer;" id="about">About</a></li>
+        <li><a onclick="kegallery()" style="cursor: pointer;" id="gallery">Gallery</a></li>
+        <li><a onclick="kecontact()" style="cursor: pointer;" id="contact">Contact</a></li>
+      </ul>
+    </div>
+    <header>
+      <img id="layoutlogo" src="assets/images/logo.jpg" alt="" srcset="" width="100%">
+    </header>
+    <main class="content">
+
+      <div class="article">
+        <div class="home">
+          <h2>Selamat Datang Di Website Wisata Mangrove Kedatim</h2>
+          <div class="formm">
+            <input type="text" name="cari" id="cari" placeholder="Cari..."
+              style="border: 1px solid black; height: 20px;">
+            <button id="search" style="background: grey;padding: 3px 10px 3px 10px; cursor: pointer;"
+              onclick="carigoogle()"> Cari
+            </button>
+          </div>
+        </div>
+        <div class="event" style="display: none;">
+          <h4 style="margin-bottom: 10px;"> Event 2023</h4>
+          <div style="display: flex; justify-content:space-around;">
+            <table class="table1" style="text-align: center;">
+              <tr>
+                <td>
+                  <img src="assets/images/event1.jpeg" width="150" alt="" srcset="">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Lomba Lato - Lato
+                </td>
+              </tr>
+              <tr>
+                <td id="event1">
+                </td>
+              </tr>
+            </table>
+            <table class="table2" style="text-align: center;">
+              <tr>
+                <td><img src="assets/images/event2.png" width="100" alt="" srcset=""></td>
+              </tr>
+              <tr>
+                <td>
+                  Spesial Tahun Baru 2024
+                </td>
+              </tr>
+              <tr>
+                <td id="event2">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="about" style="display: none; color: blue;">
+          <div class="image-container">
+            <img src="assets/images/1.png" alt="Image">
+            <div class="text-overlay">
+              <h1>About</h1>
+              <p>Wisata Mangrove Kedatim adalah wisata yang terletak di desa Kebundadap Timur Kecamatan Saronggi
+                Kabupaten Sumenep</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="gallery" style="display: none;">
+          <h2 style="display: none;" id="ketgambar"> Halo </h2>
+          <ul>
+            <li>
+              <img src="assets/images/1.png" onmouseover="tampilgambar(1,'Gazebo Di Area Tengah')"
+                onmouseout="hilanggambar(1)" width="300" alt="">
+            </li>
+            <li>
+              <img src="assets/images/2.png" onmouseover="tampilgambar(2, 'Jalan Utama Wisata')"
+                onmouseout="hilanggambar(2)" width="300" alt="">
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="assets/images/3.jpg" onmouseover="tampilgambar(3, 'View Halaman Tengah')"
+                onmouseout="hilanggambar(3)" width="300" alt="">
+            </li>
+            <li>
+              <img src="assets/images/4.jpg" onmouseover="tampilgambar(4, 'View Ketika Malam')"
+                onmouseout="hilanggambar(4)" width="300" alt="">
+            </li>
+          </ul>
+          <!-- <table>
+            <tr>
+              <td><img src="assets/images/1.png" onmouseover="tampilgambar(1)" onmouseout="hilanggambar(1)" width="300"
+                  alt="">
+                <p id="ketg1" style="display: none;"> Gazebo Di Area Tengah</p>
+              </td>
+              <td><img src="assets/images/2.png" onmouseover="tampilgambar(2)" onmouseout="hilanggambar(2)" width="300"
+                  alt="">
+                <p id="ketg2" style="display: none;"> Jalan Utama Wisata</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/images/3.jpg" onmouseover="tampilgambar(3)" onmouseout="hilanggambar(3)" width="300"
+                  alt="">
+                <p id="ketg3" style="display: none;"> View Halaman Tengah </p>
+              </td>
+              <td><img src="assets/images/4.jpg" onmouseover="tampilgambar(4)" onmouseout="hilanggambar(4)" width="300"
+                  alt="">
+                <p id="ketg4" style="display: none;"> View Ketika Malam </p>
+              </td>
+            </tr>
+          </table> -->
+        </div>
+        <div class="contact" style="display: none">
+          <!-- <h2 style="padding-left: 15px">GALIH : 081939301705 (Pengelola Mangrove)</h2> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2802837657787!2d113.86230941448338!3d-7.093474671511209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd9e3c79599d71b%3A0x4287239fd230d1b2!2sWisata%20Mangrove%20Kedatim!5e0!3m2!1sid!2sid!4v1678596350031!5m2!1sid!2sid"
+            width="630" height="250" style="border:1px solid black; margin-left: 20px" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" id="if"></iframe>
+          <form action="" method="POST">
+            <textarea name="komentar" id="ta" cols="84" rows="4" style="border: 1px solid black;margin-left: 20px"
+              placeholder="Komentar disini ....."></textarea>
+          </form>
+        </div>
+        <div class="sidebar">
+          <h2>Postingan Terakhir</h2>
+          <ul>
+            <li><a href="#">Wisata Mangrove Kedatim di Renovasi</a></li>
+            <li><a href="#">Lomba Lato - Lato di Wisata Mangrove Kedatim</a></li>
+            <li><a href="#">KKNT 02 UTM di Wisata Mangrove Kedatim</a></li>
+            <li><a href="#">Penanaman 4000 Pohon Marove</a></li>
+          </ul>
+          <h2>Arsip Blog</h2>
+          <ul>
+            <li><a href="#">December 2022</a></li>
+            <li><a href="#">Januari 2023</a></li>
+            <li><a href="#">Februari 2023</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class=" clear"></div>
+    </main>
+    <div class="footer">
+      <p>&copy; 2023 - WISATA MANGROVE KEDATIM</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
